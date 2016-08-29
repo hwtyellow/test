@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/animation.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
+	<script type="text/javascript" src="./scripts/jquery.js"></script>
+    <script type="text/javascript" src="./scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/fullPage.js"></script>
+    <script type="text/javascript" src="./scripts/h.js"></script>
+	<script type="text/javascript" src="./scripts/index.js"></script>
+    <script>
+        $(function(){
+            $('#dowebok').fullpage({
+                'navigation': true,
+                loopBottom: true,
+                'resize': true,
+                onLeave: function(anchorLink, index){    
+                    var loadedSection = $(this);      
+                    if(index == 2){        
+                        $('.slider2_font').css({animation:'u_d 2s ease'});
+                        $('.slider2_lefts').css({animation:'lefts 2s ease'});
+                        $('.slider2_rights').css({animation:'rights 2s ease'});  
+                    }else if(index == 3){        
+                        $('.slider3_font').css({animation:'u_d 2s ease'});
+                        $('.slider3_icons li').css({animation:'rotate_y 2s ease'});
+                    }else if(index == 5){        
+                        $('.slider5_mac').css({animation:'lefts 2s ease'});
+                        $('.slider5_mactext').css({animation:'little_lefts 4s ease'});
+                        $('.slider5_tit').css({animation:'rights 2s ease'});
+                        $('.slider5_text').css({animation:'rights 2s ease'});
+                    }   
+                     
+                 }
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- <div id="dowebok" class="fullpage-wrapper" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px);"> -->
+    <div id="dowebok" class="fullpage-wrapper" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, -979px, 0px); transition: all 700ms ease;">
+        <!-- slider1 -->
+        <div class="section section1 fp-section active fp-table relatv">
+            <div class="fp-tableCell"></div>
+            <div class="slider1_tit abs">
+              <span class="slider1_logo fl"></span>
+            </div>
+            <div class="slider_box slider1_box abs">
+                <div class="slider1_font abs"></div> 
+                <ul class="slider1_icons abs">
+                    <li class="ml_none left_bottom"><img src="./images/icons_1.png"></li>
+                    <li class="left_bottom"><img src="./images/icons_2.png"></li>
+                    <li class="right_bottom"><img src="./images/icons_3.png"></li>
+                    <li class="right_bottom"><img src="./images/icons_4.png"></li>
+                </ul>
+                <div class="slider1_next abs">
+                   <span class="icon_scroll"></span>
+                   <span class="icon_down"></span>
+                </div>
+            </div>
+        </div>
+        <!-- slider2 -->
+        <div class="section section2 fp-section fp-table relatv">
+            <div class="fp-tableCell"></div>
+            <div class="slider_box abs">
+                <div class="slider2_font abs"></div>
+                <span class="slider2_qi slider2_lefts abs"></span>
+                <span class="slider2_qitu abs"></span>
+                <span class="slider2_guantu abs"></span>
+                <span class="slider2_guan slider2_rights abs"></span>
+                <span class="slider2_yuan slider2_lefts abs"></span>
+                <span class="slider2_yuantu abs"></span>
+                <span class="slider2_line abs"></span>
+                <a href="" target="_blank">
+                    <span class="slider2_more abs"></span>
+                </a>
+                <!-- <div class="slider2_next abs">
+                   <span class="icon_up"></span>
+                   <span class="icon_scroll"></span>
+                   <span class="icon_down"></span>
+                </div> -->
+            </div>
+        </div>
+        <!-- slider3 -->
+        <div class="section section3 fp-section fp-table relatv">
+            <div class="fp-tableCell"></div>
+            <div class="slider_box abs">
+                <div class="slider3_font abs"></div>
+                <ul class="slider3_icons abs">
+                    <li class="ml_none"><img src="./images/img3_1.png"></li>
+                    <li><img src="./images/img3_2.png"></li>
+                    <li><img src="./images/img3_3.png"></li>
+                    <li><img src="./images/img3_4.png"></li>
+                </ul>
+                <a href="" target="_blank">
+                    <span class="slider3_more abs"></span>
+                </a>
+            </div>
+        </div>
+        <!-- slider4 -->
+        <div class="section section4 relatv">
+            <!-- <div class="slider4_pic slider4_img1"></div>
+            <div class="slider4_pic slider4_img2"></div>
+            <div class="slider4_pic slider4_img3"></div>
+            <div class="slider4_pic slider4_img4"></div> -->
+            <div class="slider4_pic abs">
+                <div class=" slider4_top slider4_img1"></div>
+                <div class="slider4_box abs">
+                    <div class="box_box1 abs"></div>
+                    <div class="box_box2 abs"></div>
+                    <div class="box_box3 abs"></div>
+                </div>
+            </div>
+            <div class="slider4_pic abs">
+                <div class="slider4_top slider4_img2"></div>
+                <div class="slider4_box abs">
+                    <div class="box2_box1 abs"></div>
+                    <div class="box2_box2 abs"></div>
+                    <div class="box2_box3 abs"></div>
+                    <div class="box2_box4 abs"></div>
+                    <div class="box2_box5 abs"></div>
+                    <div class="box2_box6 abs"></div>
+                </div>
+            </div>
+            <div class="slider4_pic abs">
+                <div class="slider4_top slider4_img3"></div>
+                <div class="slider4_box abs">
+                    <div class="box3_box1 abs"></div>
+                    <div class="box3_box2 abs"></div>
+                    <div class="box3_box3 abs"></div>
+                </div>
+            </div>
+            <div class="slider4_pic abs">
+                <div class="slider4_top slider4_img4"></div>
+                <div class="slider4_box abs">
+                    <div class="box4_box1 abs"></div>
+                    <div class="box4_box2 abs"></div>
+                    <div class="box4_box3 abs"></div>
+                </div>
+            </div>
+            <div class="pic_anniu">
+                <div class="pic_left pic_stop fl"></div>
+                <div class="pic_right pic_stop fr"></div>
+            </div>
+        </div>
+        <!-- slider5 -->
+        <div class="section section5 fp-section fp-table relatv">
+            <div class="fp-tableCell"></div>
+            <div class="slider_box abs">
+                <div class="slider5_mac abs"></div>
+                <div class="slider5_mactext abs"></div>
+                <span class="slider5_tit abs"></span>
+                <span class="slider5_text abs"></span>
+                <a href="" target="_blank">
+                    <span class="slider5_more abs"></span>
+                </a>
+                <div class="slider2_next abs">
+                    <span class="icon_up"></span>
+                    <span class="icon_scroll"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 楼层 -->
+    <div id="fp-nav" class="right" style="color: rgb(0, 0, 0); margin-top: -43.5px;">
+        <ul>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        $('.icon_down').click(function(){
+            $.fn.fullpage.moveSectionDown();
+        })
+        $('.icon_up').click(function(){
+            $.fn.fullpage.moveSectionUp();
+        })
+    </script>
+</body>
+</html>
