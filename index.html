@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8"/>
 	<title></title>
-    <link rel="stylesheet" type="text/css" href="./stylesheets/jquery.fullPage.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/animation.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
 	<script type="text/javascript" src="./scripts/jquery.js"></script>
@@ -15,22 +14,22 @@
         $(function(){
             $('#dowebok').fullpage({
                 'navigation': true,
-                loopBottom: true,
+                // loopBottom: true,
                 'resize': true,
                 onLeave: function(anchorLink, index){    
                     var loadedSection = $(this);      
                     if(index == 2){        
-                        $('.slider2_font').css({animation:'u_d 2s ease'});
-                        $('.slider2_lefts').css({animation:'lefts 2s ease'});
-                        $('.slider2_rights').css({animation:'rights 2s ease'});  
+                        $('.slider2_font').css({'animation':'u_d 2s ease','-webkit-animation':'u_d 2s ease','-moz-animation':'u_d 2s ease','-o-animation':'u_d 2s ease'});
+                        $('.slider2_lefts').css({'animation':'lefts 2s ease','-webkit-animation':'lefts 2s ease','-moz-animation':'lefts 2s ease','-o-animation':'lefts 2s ease'});
+                        $('.slider2_rights').css({'animation':'rights 2s ease','-webkit-animation':'rights 2s ease','-moz-animation':'rights 2s ease','-o-animation':'rights 2s ease'});  
                     }else if(index == 3){        
-                        $('.slider3_font').css({animation:'u_d 2s ease'});
-                        $('.slider3_icons li').css({animation:'rotate_y 2s ease'});
+                        $('.slider3_font').css({'animation':'u_d 2s ease','-webkit-animation':'u_d 2s ease','-moz-animation':'u_d 2s ease','-o-animation':'u_d 2s ease'});
+                        $('.slider3_icons li').css({'animation':'rotate_y 2s ease','-webkit-animation':'rotate_y 2s ease','-moz-animation':'rotate_y 2s ease','-o-animation':'rotate_y 2s ease'});
                     }else if(index == 5){        
-                        $('.slider5_mac').css({animation:'lefts 2s ease'});
-                        $('.slider5_mactext').css({animation:'little_lefts 4s ease'});
-                        $('.slider5_tit').css({animation:'rights 2s ease'});
-                        $('.slider5_text').css({animation:'rights 2s ease'});
+                        $('.slider5_mac').css({'animation':'lefts 2s ease','-webkit-animation':'lefts 2s ease','-moz-animation':'lefts 2s ease','-o-animation':'lefts 2s ease'});
+                        $('.slider5_mactext').css({'animation':'little_lefts 4s ease','-webkit-animation':'little_lefts 4s ease','-moz-animation':'little_lefts 4s ease','-o-animation':'little_lefts 4s ease'});
+                        $('.slider5_tit').css({'animation':'rights 2s ease','-webkit-animation':'rights 2s ease','-moz-animation':'rights 2s ease','-o-animation':'rights 2s ease'});
+                        $('.slider5_text').css({'animation':'rights 2s ease','-webkit-animation':'rights 2s ease','-moz-animation':'rights 2s ease','-o-animation':'rights 2s ease'});
                     }   
                      
                  }
@@ -49,6 +48,7 @@
             </div>
             <div class="slider_box slider1_box abs">
                 <div class="slider1_font abs"></div> 
+                <div class="slider1_pei abs"></div>
                 <ul class="slider1_icons abs">
                     <li class="ml_none left_bottom"><img src="./images/icons_1.png"></li>
                     <li class="left_bottom"><img src="./images/icons_2.png"></li>
@@ -56,7 +56,7 @@
                     <li class="right_bottom"><img src="./images/icons_4.png"></li>
                 </ul>
                 <div class="slider1_next abs">
-                   <span class="icon_scroll"></span>
+                   <!-- <span class="icon_scroll"></span> -->
                    <span class="icon_down"></span>
                 </div>
             </div>
@@ -73,9 +73,7 @@
                 <span class="slider2_yuan slider2_lefts abs"></span>
                 <span class="slider2_yuantu abs"></span>
                 <span class="slider2_line abs"></span>
-                <a href="" target="_blank">
-                    <span class="slider2_more abs"></span>
-                </a>
+                <span class="slider2_more abs"></span>
                 <!-- <div class="slider2_next abs">
                    <span class="icon_up"></span>
                    <span class="icon_scroll"></span>
@@ -94,19 +92,19 @@
                     <li><img src="./images/img3_3.png"></li>
                     <li><img src="./images/img3_4.png"></li>
                 </ul>
-                <a href="" target="_blank">
-                    <span class="slider3_more abs"></span>
-                </a>
+                <span class="slider3_more abs"></span>
             </div>
         </div>
         <!-- slider4 -->
-        <div class="section section4 relatv">
+        <div class="section section4 fp-section fp-table relatv">
             <!-- <div class="slider4_pic slider4_img1"></div>
             <div class="slider4_pic slider4_img2"></div>
             <div class="slider4_pic slider4_img3"></div>
             <div class="slider4_pic slider4_img4"></div> -->
             <div class="slider4_pic abs">
-                <div class=" slider4_top slider4_img1"></div>
+                <div class=" slider4_top slider4_img1">
+                    <img src="./images/bb1_text.png">
+                </div>
                 <div class="slider4_box abs">
                     <div class="box_box1 abs"></div>
                     <div class="box_box2 abs"></div>
@@ -114,7 +112,9 @@
                 </div>
             </div>
             <div class="slider4_pic abs">
-                <div class="slider4_top slider4_img2"></div>
+                <div class="slider4_top slider4_img2">
+                    <img src="./images/bb2_text.png">
+                </div>
                 <div class="slider4_box abs">
                     <div class="box2_box1 abs"></div>
                     <div class="box2_box2 abs"></div>
@@ -125,7 +125,9 @@
                 </div>
             </div>
             <div class="slider4_pic abs">
-                <div class="slider4_top slider4_img3"></div>
+                <div class="slider4_top slider4_img3">
+                    <img src="./images/bb3_text.png">
+                </div>
                 <div class="slider4_box abs">
                     <div class="box3_box1 abs"></div>
                     <div class="box3_box2 abs"></div>
@@ -133,7 +135,9 @@
                 </div>
             </div>
             <div class="slider4_pic abs">
-                <div class="slider4_top slider4_img4"></div>
+                <div class="slider4_top slider4_img4">
+                    <img src="./images/bb4_text.png">
+                </div>
                 <div class="slider4_box abs">
                     <div class="box4_box1 abs"></div>
                     <div class="box4_box2 abs"></div>
@@ -148,17 +152,15 @@
         <!-- slider5 -->
         <div class="section section5 fp-section fp-table relatv">
             <div class="fp-tableCell"></div>
-            <div class="slider_box abs">
+            <div class="slider_box slider5_box abs">
                 <div class="slider5_mac abs"></div>
                 <div class="slider5_mactext abs"></div>
                 <span class="slider5_tit abs"></span>
                 <span class="slider5_text abs"></span>
-                <a href="" target="_blank">
-                    <span class="slider5_more abs"></span>
-                </a>
+                <span class="slider5_more abs"></span>
                 <div class="slider2_next abs">
                     <span class="icon_up"></span>
-                    <span class="icon_scroll"></span>
+                    <!-- <span class="icon_scroll"></span> -->
                 </div>
             </div>
         </div>
@@ -168,7 +170,43 @@
         <ul>
         </ul>
     </div>
-
+    <!-- 弹框 -->
+    <div class="msg evt_baoming">
+        <a href="javascript:;" class="close"></a>
+        <form id="form2" class="">
+            <input type="hidden" name="resourceId" value="406">
+            <input type="hidden" name="resourceType" value="3">
+            <input type="hidden" class="feedback_source" name="source" value="">
+            <input type="hidden" class="feedback_url" name="url" value="">
+            <p>
+                <input type="text" id="txt_name2" name="name" class="ipt_long" placeholder="姓名(必填)" title="姓名" />
+                <span class="error" id="for_txt_name2">姓名不能为空</span>
+            </p>
+            <p>
+                <input type="text" id="txt_phone2" name="phone" class="ipt_long" placeholder="手机号(必填)" title="手机号" />
+                <span class="error" id="for_txt_phone2">手机号不能为空</span>
+            </p>
+            <p>
+                <input type="text" id="txt_email2" name="email" class="ipt_long" placeholder="E-mail" title="E-mail" />
+            </p>
+            <p>
+                <input type="text" name="company" id="txt_company2" class="ipt_long" placeholder="公司名称(必填)" title="公司名称" />
+                <span class="error" id="for_txt_company2">公司名称不能为空</span>
+            </p>
+            <p>
+                <input type="text" name="position" id="txt_position2" class="ipt_long" placeholder="职位(必填)" title="职位" />
+                <span class="error" id="for_txt_position2">职位不能为空</span>
+            </p>
+            <p>
+                <a href="javascript:submitFrom();" class="btn1">提交</a>
+            </p>
+            <p class="p_item">（资料提交后，我们将在48小时内与您取得联系）</p>
+            <p class="clearfix contact">
+                <span class="fl">客服电话：400-689-0679</span>
+                <span class="fr">联系邮箱：CS@linked-f.com</span>
+            </p>
+        </form>
+    </div>
     <script type="text/javascript">
         $('.icon_down').click(function(){
             $.fn.fullpage.moveSectionDown();

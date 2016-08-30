@@ -35,6 +35,7 @@ $(function(){
 	})
 	$('.evt_baoming .close').click(function(){
 		$('.msg').hide();
+		$('.error').hide();
 	})
 })
 function submitFrom(){
